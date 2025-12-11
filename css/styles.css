@@ -1,15 +1,10 @@
-/* estilo general*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    color: #000000;
-    background-color: #f5f5f5;
-    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
 }
 
 /* principal*/
@@ -62,9 +57,9 @@ section h2 {
 }
 
 #sobre-mi img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 300px;
+    height: 240px;
+    border-radius: 20px;
     margin-bottom: 15px;
     border: 3px solid #3498db;
 }
@@ -85,7 +80,6 @@ section h2 {
 #habilidades li,
 #hobbies li {
     padding: 8px 0;
-    border-left: 3px solid #3498db;
     padding-left: 15px;
     margin-bottom: 8px;
 }
@@ -123,13 +117,9 @@ section h2 {
 }
 
 #redes-sociales a {
-    color: #3498db;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
-}
-
-#redes-sociales a:hover {
-    text-decoration: underline;
 }
 
 #redes-sociales img {
@@ -146,16 +136,4 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-}
-
-/* ========== RESPONSIVE BÁSICO ========== */
-@media (max-width: 768px) {
-    main {
-        padding: 20px;
-        margin: 10px;
-    }
-    
-    .grannombre {
-        font-size: 1.5rem;
-    }
 }
