@@ -1,9 +1,19 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "BBH Bogle" sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
     font-style: normal;
-    font-variation-settings: "wdth" 100;
+    font-variation-settings: 
+        "wdth" 100;
+
+    /*foto de matrix de fondo*/
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8),rgb(50, 145, 56)),
+    url('../assets/images/matris.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 /*Fondo blanco para el contenido principal del CV*/
@@ -12,21 +22,16 @@ main {
     margin: 20px auto;
     background-color: white;
     padding: 30px;
+    border-radius: 15px;
 }
 
 /*=====HEADER=====*/
 header {
     color: white;
-    padding: 50px 20px;
+    padding: 40px 20px;
     text-align: center;
     
-    /*foto de matrix de fondo en el encabezado*/
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(1, 128, 32, 0.932)),
-                    url('../assets/images/matris.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
 }
 
 /*tamaño en mi nombre y carrera del encabezado*/
@@ -40,8 +45,8 @@ header {
 
 /*Espaciado y coloreado de los titulos de cada sección (Ej: Habilidades, Estudios, etc.)*/
 section {
-    margin-top: 30px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 5px;
 }
 section h2 {
     font-size: 26px;
@@ -75,11 +80,16 @@ section h2 {
 
 /* Viñetas (puntos) en habilidades, hobbies y redes sociales*/
 #habilidades ul,
-#hobbies ul,
-#redes-sociales ul {
+#hobbies ul {
     list-style-type: disc;
     list-style-position: outside;
     margin-left: none;
+}
+
+#redes-sociales li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 40px;
 }
 
 /*espaciado de textos entre los apartados habilidades y hobbies*/
@@ -95,10 +105,12 @@ section h2 {
 .descripcion,
 .Habilidades article,
 .Hobbies article,
-.estudios article {
+.estudios article,
+#redes-sociales ul {
     background-color: #eeeeee;
     padding: 20px;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 /*Nombre de titulos recibidos - apartado Estudios*/
@@ -151,11 +163,4 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(1, 128, 32, 0.932)),
-                url('../assets/images/matris.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
